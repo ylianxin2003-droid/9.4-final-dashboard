@@ -1,0 +1,107 @@
+{
+  "cache_schema_version": 4,
+  "files": {
+    "data": "data.parquet",
+    "indices": "indices.parquet",
+    "kp_horizons": "kp_horizons.parquet",
+    "products": "products.parquet",
+    "summary": "summary.parquet"
+  },
+  "forecast_contract_version": "four-horizon-evidence-v3",
+  "kp_storm_eligible": true,
+  "status": {
+    "message": "Loaded cached trial output.",
+    "metadata": {
+      "actual_analysis_output_time": "2024-10-11T02:55:00+00:00",
+      "analysis_anchor_source": "user_selected_time",
+      "analysis_downloads": 37,
+      "analysis_time": "2024-10-11T02:55:00+00:00",
+      "archive_start": "2024-09-28T00:00:00+00:00",
+      "available_primary_forecast_periods": [],
+      "baseline_download_failures": 0,
+      "baseline_downloads": 0,
+      "baseline_reference_states_used": 0,
+      "baseline_state_count": 0,
+      "cache_contract_validated": true,
+      "cache_schema_version": 4,
+      "cached_trial_output": true,
+      "forecast_contract_version": "four-horizon-evidence-v3",
+      "forecast_downloads": 0,
+      "forecast_request_audit": [
+        {
+          "analysis_time": "2024-10-11T02:55:00+00:00",
+          "display_role": "primary",
+          "downloaded_from_serene": false,
+          "forecast_parameter": 30,
+          "latency": "rapid",
+          "message": "SERENE AIDA forecast API returned status 404 for product=rapid, file_type=raw, file_time=2024-10-11T02:55:00, forecast=30 min. \"Requested file is not available for download.\"",
+          "outcome": "not_published",
+          "valid_time": "2024-10-11T03:25:00+00:00"
+        },
+        {
+          "analysis_time": "2024-10-11T02:55:00+00:00",
+          "display_role": "primary",
+          "downloaded_from_serene": false,
+          "forecast_parameter": 90,
+          "latency": "rapid",
+          "message": "SERENE AIDA forecast API returned status 404 for product=rapid, file_type=raw, file_time=2024-10-11T02:55:00, forecast=90 min. \"Requested file is not available for download.\"",
+          "outcome": "not_published",
+          "valid_time": "2024-10-11T04:25:00+00:00"
+        },
+        {
+          "analysis_time": "2024-10-11T02:55:00+00:00",
+          "display_role": "primary",
+          "downloaded_from_serene": false,
+          "forecast_parameter": 180,
+          "latency": "rapid",
+          "message": "SERENE AIDA forecast API returned status 404 for product=rapid, file_type=raw, file_time=2024-10-11T02:55:00, forecast=180 min. \"Requested file is not available for download.\"",
+          "outcome": "not_published",
+          "valid_time": "2024-10-11T05:55:00+00:00"
+        },
+        {
+          "analysis_time": "2024-10-11T02:55:00+00:00",
+          "display_role": "primary",
+          "downloaded_from_serene": false,
+          "forecast_parameter": 360,
+          "latency": "rapid",
+          "message": "SERENE AIDA forecast API returned status 404 for product=rapid, file_type=raw, file_time=2024-10-11T02:55:00, forecast=360 min. \"Requested file is not available for download.\"",
+          "outcome": "not_published",
+          "valid_time": "2024-10-11T08:55:00+00:00"
+        }
+      ],
+      "grid_step_degrees": 15.0,
+      "kp_ap_data_statuses": [
+        "definitive"
+      ],
+      "kp_ap_index_message": "Loaded 66 Kp/ap row(s) from GFZ JSON service.",
+      "kp_ap_index_status": "loaded",
+      "kp_ap_missing_indices": [],
+      "kp_ap_source": "GFZ Helmholtz Centre for Geosciences",
+      "kp_ap_source_latest_time": "2024-10-11T00:00:00+00:00",
+      "kp_horizon_message": "Kp +30/+90/+180/+360 minute horizon evidence resolved.",
+      "loaded_region": {
+        "lat_max": 90.0,
+        "lat_min": -90.0,
+        "lon_max": 180.0,
+        "lon_min": -180.0
+      },
+      "local_map_points": 325,
+      "original_source": "trial_cache",
+      "primary_forecast_states": 0,
+      "requested_analysis_time": "2024-10-11T02:55:00+00:00",
+      "rolling_analysis_downloads": 37,
+      "rolling_state_count": 37,
+      "total_official_aida_downloads": 37,
+      "upstream_interpreter": "breid-phys/aida-ionosphere v0.1.3"
+    },
+    "ok": true,
+    "source": "trial_cache",
+    "warnings": [
+      "PSD unavailable: a complete 30-day AIDA reference is unavailable before the 2024-09-28 archive boundary.",
+      "Official AIDA +30 min forecast unavailable: SERENE did not provide a downloadable forecast file for this analysis time.",
+      "Official AIDA +90 min forecast unavailable: SERENE did not provide a downloadable forecast file for this analysis time.",
+      "Official AIDA +3h forecast unavailable: SERENE did not provide a downloadable forecast file for this analysis time.",
+      "Official AIDA +6h forecast unavailable: SERENE did not provide a downloadable forecast file for this analysis time."
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+streamlit>=1.37,<2
+requests
+python-dotenv
+pandas<2
+numpy>=1.25,<2
+plotly
+h5py>=3.11,<4
+git+https://github.com/breid-phys/aida-ionosphere.git@v0.1.3
